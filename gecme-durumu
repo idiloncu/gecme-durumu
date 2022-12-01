@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+       // Dersler : Matematik, Fizik, Türkçe, Kimya, Müzik
+       // Geçme Notu : 55
+        //Eğer girilen ders notları 0 veya 100 arasında değil ise ortalamaya katılmasın.
+
+    int mat,fiz,tr,kim,muz;
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Matematik notunuzu girin: ");
+    mat = scanner.nextInt();
+
+        System.out.print("Fizik notunuzu girin: ");
+        fiz= scanner.nextInt();
+
+        System.out.print("Türkçe notunuzu girin: ");
+        tr=scanner.nextInt();
+
+        System.out.print("kimya notunuzu girin: ");
+        kim= scanner.nextInt();
+
+        System.out.print("Müzik notunuzu girin: ");
+        muz = scanner.nextInt();
+
+        double avarage = (mat+fiz+tr+kim+muz)/5;
+
+        if (avarage<50){
+            System.out.print("FAILED!! YOUR AVARAGE IS:"+avarage);
+        }
+        System.out.print("YOU'RE SUCCESS YOUR AVARAGE IS:" +avarage);
+    }
+}
